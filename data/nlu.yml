@@ -1,0 +1,55 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: Choose_flight
+  examples: |
+    - I want to fly to [New York](location)
+    - I need a flight to [London](location)
+    - Can I book a flight to [Tokyo](location)?
+
+- intent: Choose_bus
+  examples: |
+    - I want to go by bus to [Lahore](location)
+    - I need a bus ticket to [Islamabad](location)
+    - Can I book a bus to [Karachi](location)?
+
+- intent: show_flights
+  examples: |
+    - Show me status of flight [MF8051](icao)
+    - Can you give me the status of flight [TK33](icao)
+    - Give me the status of flight[QF556](icao)
+
+- intent: show_ALLflights
+  examples: |
+    - Give me all real-time flights.
+    - Can you give all flights in real time?
+    - Give me all planes in air right now.

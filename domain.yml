@@ -1,0 +1,53 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - Choose_flight
+  - show_flights
+  - show_ALLflights
+  - Choose_bus
+  - bot_challenge
+entities:
+  - location
+  - icao
+
+
+slots:
+  location:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: location
+  icao:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: icao
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  utter_ask_destination:
+  - text: "Where and how would you like to travel?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_suggest_flight:
+  - text: "You can book a flight to {location} here: [Qatar Airways](https://www.qatarairways.com/en-pk/homepage.html)"
+
+  utter_suggest_bus:
+  - text: "You can book a bus to {location} here: [Daewoo](https://daewoo.com.pk/)"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+actions:
+  - action_show_flights
+  - action_show_ALL_flights
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

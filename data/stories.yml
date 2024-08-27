@@ -1,0 +1,29 @@
+version: "3.1"
+
+stories:
+- story: User chooses to fly with destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_destination
+  - intent: Choose_flight
+  - action: utter_suggest_flight
+
+- story: User chooses to go by bus with destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_destination
+  - intent: Choose_bus
+  - action: utter_suggest_bus
+- story: show flights from location
+  steps:
+  - intent: show_flights
+    entities:
+      - location: "New York"
+  - action: action_show_flights
+
+- story: show flights in real time
+  steps:
+  - intent: show_ALLflights
+  - action: action_show_ALL_flights
