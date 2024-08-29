@@ -27,8 +27,8 @@ This Rasa-based Travel Chatbot is designed to assist users in planning their tri
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repository/travel-chatbot.git
-cd travel-chatbot
+git clone https://github.com/AsawirShafiq/Travel-Chatbot-RASA.git
+cd Travel-Chatbot-RASA
 ```
 ### 2. Install Dependencies
 ```bash
