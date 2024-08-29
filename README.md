@@ -22,3 +22,32 @@ This Rasa-based Travel Chatbot is designed to assist users in planning their tri
 ### 4. Frontend Interface
 #### Reason for Use: While the core of the chatbot is managed by Rasa, the frontend interface could be built using frameworks like React or integrated into existing platforms to provide a user-friendly way for users to interact with the chatbot.
 #### How It Works: The frontend sends user messages to the Rasa server, which processes the input and sends back the appropriate response. The frontend displays this response to the user, maintaining a seamless conversation flow.
+
+## Installation and Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-repository/travel-chatbot.git
+cd travel-chatbot
+```
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 3. Set up API Keys
+You can obtain various free API keys on a simple google search.
+
+### 4. Train the RASA Model
+```bash
+rasa train
+```
+
+### 5. Run the custom actions in a separate terminal.
+```bash
+rasa run actions
+```
+
+### 6. Run the chatbot on the shell
+```bash
+rasa shell
+```
